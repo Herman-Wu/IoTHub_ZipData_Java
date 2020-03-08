@@ -7,7 +7,8 @@ Like most message exchange system, there are max message size limitations when u
 If you have a big payload to transfer, the best practice is to upload the data to Azure Blob storage and use IoTHub to send a notification with messages about how to download the file.
 In some cases, you just want to send the data payload in compressed format (if they can stay within 64 KB limitation) in IoTHub so you can prevent the extra implementation.
 
-This project is the implementation in Java.
+This server side code (send binary payload)  is  implemented in Java, the client side (device) code in implemented in Node.js. 
+
 
 
 
